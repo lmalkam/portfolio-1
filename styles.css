@@ -201,6 +201,46 @@ h1 {
   content: "";
 }
 
+.experience-card h3 {
+  margin-top: 0;
+}
+
+.role-meta {
+  margin: 2px 0 6px;
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+}
+
+.role-tools {
+  margin: 0 0 8px;
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+}
+
+.role-bullets {
+  margin: 0;
+  padding-left: 1.1em;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  line-height: 1.45;
+}
+
+.role-bullets li + li {
+  margin-top: 6px;
+}
+
+.achievements-list {
+  margin: 0;
+  padding-left: 1.1em;
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  line-height: 1.45;
+}
+
+.achievements-list li + li {
+  margin-top: 8px;
+}
+
 .about-grid {
   display: grid;
   gap: 12px;
