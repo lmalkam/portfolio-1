@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio – Your Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="branding">
+          <span class="logo-dot"></span>
+          <span class="brand-name">Linesh Malkam</span>
+        </div>
+        <nav class="nav">
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow">Portfolio</p>
+            <h1>Software engineer building reliable web experiences.</h1>
+            <p class="hero-subtitle">
+              Short intro about your stack, the kinds of problems you solve, and what you’re
+              currently working on.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn primary">View projects</a>
+              <a href="#contact" class="btn ghost">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Selected projects</h2>
+            <p>Highlight a few engineering projects you’re proud of.</p>
+          </div>
+          <div class="grid projects-grid">
+            <article class="card project-card">
+              <div class="pill">Case study</div>
+              <h3>Project One</h3>
+              <p>
+                One‑sentence description focusing on the problem, tech stack, and outcome.
+              </p>
+              <a href="#" class="card-link">View details</a>
+            </article>
+            <article class="card project-card">
+              <div class="pill">Product</div>
+              <h3>Project Two</h3>
+              <p>
+                Another quick description highlighting scale, performance, or reliability.
+              </p>
+              <a href="#" class="card-link">View details</a>
+            </article>
+            <article class="card project-card">
+              <div class="pill">Experiment</div>
+              <h3>Project Three</h3>
+              <p>
+                A smaller tool, library, or side project that shows curiosity.
+              </p>
+              <a href="#" class="card-link">View details</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <h2>Experience</h2>
+            <p>Recent roles and the kind of impact you had.</p>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <h3>Senior Software Engineer · Company Name</h3>
+              <p class="eyebrow">2022 — Present</p>
+              <p>
+                One or two lines about what you own: systems, features, or metrics you move.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Software Engineer · Previous Company</h3>
+              <p class="eyebrow">2019 — 2022</p>
+              <p>
+                Short summary of your work: languages, frameworks, and notable projects.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Achievements</h2>
+            <p>Things you’re proud of as a developer.</p>
+          </div>
+          <ul>
+            <li>Achieved X% performance improvement on Y by doing Z.</li>
+            <li>Shipped feature A used by B+ users/customers.</li>
+            <li>Spoke, wrote, or contributed to open source around topic C.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="section section-alt">
+        <div class="container about-grid">
+          <div>
+            <h2>About</h2>
+            <p>
+              A short paragraph about your background as a developer, how you think about
+              building software, and what you’re currently focused on.
+            </p>
+            <p>
+              Mention your favourite tools and technologies, and the types of systems you
+              enjoy working on (frontend, backend, infra, data, etc.).
+            </p>
+          </div>
+          <div class="pill-list">
+            <span class="pill">Frontend</span>
+            <span class="pill">React</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill">Node.js</span>
+            <span class="pill">Testing</span>
+            <span class="pill">Systems thinking</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact-inner">
+          <div>
+            <h2>Contact</h2>
+            <p>
+              Ready to collaborate or have a question? Reach out and let’s talk.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:you@example.com" class="btn primary">Email me</a>
+            <div class="contact-meta">
+              <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="#" target="_blank" rel="noreferrer">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Your Name</span>
+        <span>Built with a minimalist layout.</span>
+      </div>
+    </footer>
+
+    <script>
+      const yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+</html>
